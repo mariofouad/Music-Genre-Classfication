@@ -1,0 +1,828 @@
+{
+  "test_metrics": {
+    "accuracy": 0.6061867935752528,
+    "macro_f1": 0.5648168009174903,
+    "weighted_f1": 0.598406739535618,
+    "costly_misclassification_rate": 0.055324211778703156,
+    "high_confidence_accuracy": 0.9126347802045894,
+    "top_3_accuracy": 0.8553688280785247
+  },
+  "external_metrics": {
+    "accuracy": 0.24567841622404635,
+    "macro_f1": 0.12827585824748303,
+    "weighted_f1": 0.2679996865361252,
+    "costly_misclassification_rate": 0.0932882665379044,
+    "high_confidence_accuracy": 0.6948051948051948,
+    "top_3_accuracy": 0.574215354901014
+  },
+  "input_distributions": {
+    "train_family_counts": {
+      "latin_world": 14519,
+      "electronic": 12285,
+      "rock": 10614,
+      "pop": 6977,
+      "mood_context": 6163,
+      "acoustic_folk_country": 3702,
+      "ambient_chill": 3451,
+      "jazz_blues_classical": 2770,
+      "hip_hop_rnb": 2276
+    },
+    "test_family_counts": {
+      "latin_world": 3111,
+      "electronic": 2632,
+      "rock": 2274,
+      "pop": 1495,
+      "mood_context": 1321,
+      "acoustic_folk_country": 793,
+      "ambient_chill": 740,
+      "jazz_blues_classical": 594,
+      "hip_hop_rnb": 488
+    },
+    "test_prediction_counts": {
+      "latin_world": 4293,
+      "electronic": 2881,
+      "rock": 2274,
+      "pop": 1253,
+      "mood_context": 802,
+      "ambient_chill": 796,
+      "acoustic_folk_country": 618,
+      "jazz_blues_classical": 405,
+      "hip_hop_rnb": 126
+    },
+    "external_family_counts": {
+      "rock": 4092,
+      "electronic": 2270,
+      "hip_hop_rnb": 1010,
+      "acoustic_folk_country": 974,
+      "jazz_blues_classical": 956,
+      "pop": 446,
+      "mood_context": 374,
+      "latin_world": 233
+    },
+    "external_prediction_counts": {
+      "latin_world": 2848,
+      "electronic": 2830,
+      "ambient_chill": 2399,
+      "rock": 1686,
+      "jazz_blues_classical": 264,
+      "acoustic_folk_country": 226,
+      "mood_context": 71,
+      "pop": 31
+    },
+    "source_counts_processed": {
+      "spotify": 89653,
+      "fma": 9355,
+      "gtzan": 1000
+    }
+  },
+  "per_class_metrics": [
+    {
+      "genre_family": "acoustic_folk_country",
+      "precision": 0.5776699029126213,
+      "recall": 0.4501891551071879,
+      "f1-score": 0.5060240963855421,
+      "support": 793.0,
+      "predicted_count": 618,
+      "actual_count": 793,
+      "prediction_to_actual_ratio": 0.7793190416141236
+    },
+    {
+      "genre_family": "ambient_chill",
+      "precision": 0.6231155778894473,
+      "recall": 0.6702702702702703,
+      "f1-score": 0.6458333333333334,
+      "support": 740.0,
+      "predicted_count": 796,
+      "actual_count": 740,
+      "prediction_to_actual_ratio": 1.0756756756756756
+    },
+    {
+      "genre_family": "electronic",
+      "precision": 0.6560222145088511,
+      "recall": 0.7180851063829787,
+      "f1-score": 0.6856520950480682,
+      "support": 2632.0,
+      "predicted_count": 2881,
+      "actual_count": 2632,
+      "prediction_to_actual_ratio": 1.0946048632218845
+    },
+    {
+      "genre_family": "hip_hop_rnb",
+      "precision": 0.8571428571428571,
+      "recall": 0.22131147540983606,
+      "f1-score": 0.3517915309446254,
+      "support": 488.0,
+      "predicted_count": 126,
+      "actual_count": 488,
+      "prediction_to_actual_ratio": 0.2581967213114754
+    },
+    {
+      "genre_family": "jazz_blues_classical",
+      "precision": 0.7333333333333333,
+      "recall": 0.5,
+      "f1-score": 0.5945945945945946,
+      "support": 594.0,
+      "predicted_count": 405,
+      "actual_count": 594,
+      "prediction_to_actual_ratio": 0.6818181818181818
+    },
+    {
+      "genre_family": "latin_world",
+      "precision": 0.5322618215699977,
+      "recall": 0.7344905175184828,
+      "f1-score": 0.617233927606699,
+      "support": 3111.0,
+      "predicted_count": 4293,
+      "actual_count": 3111,
+      "prediction_to_actual_ratio": 1.3799421407907426
+    },
+    {
+      "genre_family": "mood_context",
+      "precision": 0.6957605985037406,
+      "recall": 0.42240726722180166,
+      "f1-score": 0.5256712199717382,
+      "support": 1321.0,
+      "predicted_count": 802,
+      "actual_count": 1321,
+      "prediction_to_actual_ratio": 0.607115821347464
+    },
+    {
+      "genre_family": "pop",
+      "precision": 0.5714285714285714,
+      "recall": 0.4789297658862876,
+      "f1-score": 0.5211062590975255,
+      "support": 1495.0,
+      "predicted_count": 1253,
+      "actual_count": 1495,
+      "prediction_to_actual_ratio": 0.8381270903010033
+    },
+    {
+      "genre_family": "rock",
+      "precision": 0.6354441512752859,
+      "recall": 0.6354441512752859,
+      "f1-score": 0.6354441512752859,
+      "support": 2274.0,
+      "predicted_count": 2274,
+      "actual_count": 2274,
+      "prediction_to_actual_ratio": 1.0
+    }
+  ],
+  "top_confusions": [
+    {
+      "genre_family": "rock",
+      "prediction": "latin_world",
+      "count": 405,
+      "pct_of_all_test_errors": 0.07647280966767371
+    },
+    {
+      "genre_family": "pop",
+      "prediction": "latin_world",
+      "count": 378,
+      "pct_of_all_test_errors": 0.07137462235649547
+    },
+    {
+      "genre_family": "electronic",
+      "prediction": "latin_world",
+      "count": 341,
+      "pct_of_all_test_errors": 0.06438821752265861
+    },
+    {
+      "genre_family": "mood_context",
+      "prediction": "latin_world",
+      "count": 291,
+      "pct_of_all_test_errors": 0.05494712990936556
+    },
+    {
+      "genre_family": "latin_world",
+      "prediction": "electronic",
+      "count": 287,
+      "pct_of_all_test_errors": 0.054191842900302115
+    },
+    {
+      "genre_family": "acoustic_folk_country",
+      "prediction": "latin_world",
+      "count": 231,
+      "pct_of_all_test_errors": 0.043617824773413895
+    },
+    {
+      "genre_family": "electronic",
+      "prediction": "rock",
+      "count": 207,
+      "pct_of_all_test_errors": 0.03908610271903323
+    },
+    {
+      "genre_family": "rock",
+      "prediction": "electronic",
+      "count": 203,
+      "pct_of_all_test_errors": 0.03833081570996979
+    },
+    {
+      "genre_family": "hip_hop_rnb",
+      "prediction": "latin_world",
+      "count": 193,
+      "pct_of_all_test_errors": 0.03644259818731118
+    },
+    {
+      "genre_family": "mood_context",
+      "prediction": "electronic",
+      "count": 173,
+      "pct_of_all_test_errors": 0.032666163141993956
+    },
+    {
+      "genre_family": "latin_world",
+      "prediction": "rock",
+      "count": 171,
+      "pct_of_all_test_errors": 0.03228851963746224
+    },
+    {
+      "genre_family": "mood_context",
+      "prediction": "rock",
+      "count": 150,
+      "pct_of_all_test_errors": 0.028323262839879154
+    },
+    {
+      "genre_family": "latin_world",
+      "prediction": "pop",
+      "count": 142,
+      "pct_of_all_test_errors": 0.026812688821752265
+    },
+    {
+      "genre_family": "pop",
+      "prediction": "rock",
+      "count": 141,
+      "pct_of_all_test_errors": 0.026623867069486405
+    },
+    {
+      "genre_family": "pop",
+      "prediction": "electronic",
+      "count": 138,
+      "pct_of_all_test_errors": 0.026057401812688823
+    }
+  ],
+  "confidence_bins": [
+    {
+      "confidence_bin": "(-0.001, 0.3]",
+      "rows": 2297,
+      "accuracy": 0.2969090117544623,
+      "avg_confidence": 0.258731204470484,
+      "top3_accuracy": 0.6804527644754027
+    },
+    {
+      "confidence_bin": "(0.3, 0.4]",
+      "rows": 2955,
+      "accuracy": 0.4213197969543147,
+      "avg_confidence": 0.352845497143893,
+      "top3_accuracy": 0.8077834179357022
+    },
+    {
+      "confidence_bin": "(0.4, 0.5]",
+      "rows": 2282,
+      "accuracy": 0.5534618755477652,
+      "avg_confidence": 0.450905633981609,
+      "top3_accuracy": 0.8606485539000877
+    },
+    {
+      "confidence_bin": "(0.5, 0.6]",
+      "rows": 1684,
+      "accuracy": 0.6876484560570071,
+      "avg_confidence": 0.5520684288164989,
+      "top3_accuracy": 0.8966745843230404
+    },
+    {
+      "confidence_bin": "(0.6, 0.7]",
+      "rows": 1348,
+      "accuracy": 0.8256676557863502,
+      "avg_confidence": 0.6515853586736376,
+      "top3_accuracy": 0.9369436201780416
+    },
+    {
+      "confidence_bin": "(0.7, 0.8]",
+      "rows": 927,
+      "accuracy": 0.8791801510248112,
+      "avg_confidence": 0.7525146972369194,
+      "top3_accuracy": 0.9633225458468176
+    },
+    {
+      "confidence_bin": "(0.8, 0.9]",
+      "rows": 825,
+      "accuracy": 0.9236363636363636,
+      "avg_confidence": 0.8547114838202403,
+      "top3_accuracy": 0.9672727272727273
+    },
+    {
+      "confidence_bin": "(0.9, 1.0]",
+      "rows": 1130,
+      "accuracy": 0.9858407079646018,
+      "avg_confidence": 0.9672403634102592,
+      "top3_accuracy": 0.995575221238938
+    }
+  ],
+  "worst_raw_genres_min_50_rows": [
+    {
+      "track_genre": "groove",
+      "rows": 98,
+      "accuracy": 0.05102040816326531,
+      "avg_confidence": 0.5233843537414966,
+      "family": "hip_hop_rnb"
+    },
+    {
+      "track_genre": "goth",
+      "rows": 135,
+      "accuracy": 0.05925925925925926,
+      "avg_confidence": 0.42551146384479716,
+      "family": "mood_context"
+    },
+    {
+      "track_genre": "anime",
+      "rows": 162,
+      "accuracy": 0.09876543209876543,
+      "avg_confidence": 0.4016460905349794,
+      "family": "mood_context"
+    },
+    {
+      "track_genre": "gospel",
+      "rows": 112,
+      "accuracy": 0.125,
+      "avg_confidence": 0.4378720238095238,
+      "family": "mood_context"
+    },
+    {
+      "track_genre": "r-n-b",
+      "rows": 72,
+      "accuracy": 0.1388888888888889,
+      "avg_confidence": 0.4847222222222222,
+      "family": "hip_hop_rnb"
+    },
+    {
+      "track_genre": "garage",
+      "rows": 129,
+      "accuracy": 0.20930232558139536,
+      "avg_confidence": 0.3943152454780362,
+      "family": "electronic"
+    },
+    {
+      "track_genre": "blues",
+      "rows": 130,
+      "accuracy": 0.23846153846153847,
+      "avg_confidence": 0.5150089031339031,
+      "family": "jazz_blues_classical"
+    },
+    {
+      "track_genre": "folk",
+      "rows": 140,
+      "accuracy": 0.24285714285714285,
+      "avg_confidence": 0.4393159013605442,
+      "family": "acoustic_folk_country"
+    },
+    {
+      "track_genre": "sad",
+      "rows": 80,
+      "accuracy": 0.25,
+      "avg_confidence": 0.3494791666666667,
+      "family": "mood_context"
+    },
+    {
+      "track_genre": "indie-pop",
+      "rows": 102,
+      "accuracy": 0.2549019607843137,
+      "avg_confidence": 0.415541452692188,
+      "family": "pop"
+    },
+    {
+      "track_genre": "funk",
+      "rows": 103,
+      "accuracy": 0.2621359223300971,
+      "avg_confidence": 0.48631674757281557,
+      "family": "hip_hop_rnb"
+    },
+    {
+      "track_genre": "hip-hop",
+      "rows": 133,
+      "accuracy": 0.2781954887218045,
+      "avg_confidence": 0.44359841529954314,
+      "family": "hip_hop_rnb"
+    },
+    {
+      "track_genre": "synth-pop",
+      "rows": 136,
+      "accuracy": 0.27941176470588236,
+      "avg_confidence": 0.394828431372549,
+      "family": "pop"
+    },
+    {
+      "track_genre": "rockabilly",
+      "rows": 82,
+      "accuracy": 0.2804878048780488,
+      "avg_confidence": 0.41341463414634144,
+      "family": "rock"
+    },
+    {
+      "track_genre": "acoustic",
+      "rows": 141,
+      "accuracy": 0.28368794326241137,
+      "avg_confidence": 0.3676812450748621,
+      "family": "acoustic_folk_country"
+    },
+    {
+      "track_genre": "j-pop",
+      "rows": 106,
+      "accuracy": 0.29245283018867924,
+      "avg_confidence": 0.4930817610062893,
+      "family": "pop"
+    },
+    {
+      "track_genre": "happy",
+      "rows": 129,
+      "accuracy": 0.29457364341085274,
+      "avg_confidence": 0.4838265255416418,
+      "family": "mood_context"
+    },
+    {
+      "track_genre": "guitar",
+      "rows": 133,
+      "accuracy": 0.3308270676691729,
+      "avg_confidence": 0.4079573934837093,
+      "family": "rock"
+    },
+    {
+      "track_genre": "chill",
+      "rows": 149,
+      "accuracy": 0.348993288590604,
+      "avg_confidence": 0.34556727388942154,
+      "family": "ambient_chill"
+    },
+    {
+      "track_genre": "j-rock",
+      "rows": 77,
+      "accuracy": 0.36363636363636365,
+      "avg_confidence": 0.40303030303030307,
+      "family": "rock"
+    }
+  ],
+  "top_feature_groups": [
+    {
+      "group": "acousticness",
+      "importance": 0.04739328105606932
+    },
+    {
+      "group": "danceability",
+      "importance": 0.04545785026957079
+    },
+    {
+      "group": "popularity",
+      "importance": 0.044960968041902985
+    },
+    {
+      "group": "energy_acoustic_ratio",
+      "importance": 0.04370340903981335
+    },
+    {
+      "group": "energy_danceability_score",
+      "importance": 0.04113026270095133
+    },
+    {
+      "group": "popularity_energy_score",
+      "importance": 0.03938775943378167
+    },
+    {
+      "group": "acoustic_energy_balance",
+      "importance": 0.038242281293813685
+    },
+    {
+      "group": "duration_minutes",
+      "importance": 0.03757952426453877
+    },
+    {
+      "group": "duration_ms",
+      "importance": 0.0372202030196307
+    },
+    {
+      "group": "speechiness",
+      "importance": 0.036430237228939635
+    },
+    {
+      "group": "speech_energy_score",
+      "importance": 0.03602344805400319
+    },
+    {
+      "group": "dance_valence_score",
+      "importance": 0.0342725560049619
+    },
+    {
+      "group": "instrumentalness",
+      "importance": 0.034078558203218944
+    },
+    {
+      "group": "valence",
+      "importance": 0.03343171932442802
+    },
+    {
+      "group": "energy",
+      "importance": 0.03313022651109547
+    },
+    {
+      "group": "acoustic_instrumental_score",
+      "importance": 0.03277614397134822
+    },
+    {
+      "group": "valence_energy_score",
+      "importance": 0.03207231055094344
+    },
+    {
+      "group": "loudness",
+      "importance": 0.03175494423190834
+    },
+    {
+      "group": "loudness_normalized",
+      "importance": 0.03114292386424143
+    },
+    {
+      "group": "tempo",
+      "importance": 0.030670739121514114
+    }
+  ],
+  "top_feature_importances": [
+    {
+      "feature": "numeric__acousticness",
+      "importance": 0.04739328105606932
+    },
+    {
+      "feature": "numeric__danceability",
+      "importance": 0.04545785026957079
+    },
+    {
+      "feature": "numeric__popularity",
+      "importance": 0.044960968041902985
+    },
+    {
+      "feature": "numeric__energy_acoustic_ratio",
+      "importance": 0.04370340903981335
+    },
+    {
+      "feature": "numeric__energy_danceability_score",
+      "importance": 0.04113026270095133
+    },
+    {
+      "feature": "numeric__popularity_energy_score",
+      "importance": 0.03938775943378167
+    },
+    {
+      "feature": "numeric__acoustic_energy_balance",
+      "importance": 0.038242281293813685
+    },
+    {
+      "feature": "numeric__duration_minutes",
+      "importance": 0.03757952426453877
+    },
+    {
+      "feature": "numeric__duration_ms",
+      "importance": 0.0372202030196307
+    },
+    {
+      "feature": "numeric__speechiness",
+      "importance": 0.036430237228939635
+    },
+    {
+      "feature": "numeric__speech_energy_score",
+      "importance": 0.03602344805400319
+    },
+    {
+      "feature": "numeric__dance_valence_score",
+      "importance": 0.0342725560049619
+    },
+    {
+      "feature": "numeric__instrumentalness",
+      "importance": 0.034078558203218944
+    },
+    {
+      "feature": "numeric__valence",
+      "importance": 0.03343171932442802
+    },
+    {
+      "feature": "numeric__energy",
+      "importance": 0.03313022651109547
+    },
+    {
+      "feature": "numeric__acoustic_instrumental_score",
+      "importance": 0.03277614397134822
+    },
+    {
+      "feature": "numeric__valence_energy_score",
+      "importance": 0.03207231055094344
+    },
+    {
+      "feature": "numeric__loudness",
+      "importance": 0.03175494423190834
+    },
+    {
+      "feature": "numeric__loudness_normalized",
+      "importance": 0.03114292386424143
+    },
+    {
+      "feature": "numeric__tempo",
+      "importance": 0.030670739121514114
+    },
+    {
+      "feature": "numeric__tempo_normalized",
+      "importance": 0.03062000590681357
+    },
+    {
+      "feature": "numeric__tempo_energy_score",
+      "importance": 0.02987962999022082
+    },
+    {
+      "feature": "numeric__liveness_energy_score",
+      "importance": 0.029404323453843948
+    },
+    {
+      "feature": "numeric__liveness",
+      "importance": 0.029052682729327838
+    },
+    {
+      "feature": "numeric__key",
+      "importance": 0.01955342303978331
+    }
+  ],
+  "external_feature_shift": [
+    {
+      "feature": "instrumentalness",
+      "train_mean": 0.17384416733113436,
+      "external_mean": 0.6544303028093532,
+      "mean_difference": 0.4805861354782188,
+      "standardized_mean_difference": 1.3123019505811016,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "acoustic_instrumental_score",
+      "train_mean": 0.06717415137149502,
+      "external_mean": 0.3672945465556883,
+      "mean_difference": 0.30012039518419326,
+      "standardized_mean_difference": 1.185778922858521,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "energy_danceability_score",
+      "train_mean": 0.36330229317742485,
+      "external_mean": 0.25421678106003404,
+      "mean_difference": -0.10908551211739081,
+      "standardized_mean_difference": -0.5986826229613003,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "acousticness",
+      "train_mean": 0.32761445371512343,
+      "external_mean": 0.5345365535998183,
+      "mean_difference": 0.2069220998846949,
+      "standardized_mean_difference": 0.5883414691722963,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "acoustic_energy_balance",
+      "train_mean": -0.3070510446021958,
+      "external_mean": -0.005074990683292357,
+      "mean_difference": 0.3019760539189034,
+      "standardized_mean_difference": 0.5332944009283281,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "danceability",
+      "train_mean": 0.5622670522810204,
+      "external_mean": 0.46951149934991987,
+      "mean_difference": -0.0927555529311005,
+      "standardized_mean_difference": -0.5124113185898788,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "energy",
+      "train_mean": 0.6346654983173193,
+      "external_mean": 0.5396115442831106,
+      "mean_difference": -0.09505395403420869,
+      "standardized_mean_difference": -0.36270263399510677,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "dance_valence_score",
+      "train_mean": 0.2864342753186099,
+      "external_mean": 0.2267472305802264,
+      "mean_difference": -0.05968704473838349,
+      "standardized_mean_difference": -0.29840653878354034,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "valence_energy_score",
+      "train_mean": 0.31470025072551305,
+      "external_mean": 0.2483295479722182,
+      "mean_difference": -0.06637070275329485,
+      "standardized_mean_difference": -0.29525703124147834,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "liveness_energy_score",
+      "train_mean": 0.14731604182368657,
+      "external_mean": 0.10463243824841759,
+      "mean_difference": -0.042683603575268986,
+      "standardized_mean_difference": -0.2709687690090834,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "tempo_energy_score",
+      "train_mean": 0.3011654384752331,
+      "external_mean": 0.2609260184049545,
+      "mean_difference": -0.040239420070278586,
+      "standardized_mean_difference": -0.2522553089647909,
+      "train_missing_rate": 0.0016731201300253357,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "energy_acoustic_ratio",
+      "train_mean": 105.27609753601027,
+      "external_mean": 49.5125021842706,
+      "mean_difference": -55.76359535173967,
+      "standardized_mean_difference": -0.24523735172184558,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "popularity_energy_score",
+      "train_mean": 21.097262590859984,
+      "external_mean": 17.807180961342652,
+      "mean_difference": -3.2900816295173314,
+      "standardized_mean_difference": -0.21477713997297238,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "valence",
+      "train_mean": 0.46895545300125885,
+      "external_mean": 0.4332243750708391,
+      "mean_difference": -0.03573107793041974,
+      "standardized_mean_difference": -0.13505060185135537,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "liveness",
+      "train_mean": 0.21722801934445565,
+      "external_mean": 0.19169128893687867,
+      "mean_difference": -0.02553673040757698,
+      "standardized_mean_difference": -0.13370596667312365,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "speechiness",
+      "train_mean": 0.08752067976480711,
+      "external_mean": 0.10072946340104758,
+      "mean_difference": 0.013208783636240465,
+      "standardized_mean_difference": 0.11290803197264758,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "speech_energy_score",
+      "train_mean": 0.05968812542360754,
+      "external_mean": 0.05430186618256095,
+      "mean_difference": -0.00538625924104659,
+      "standardized_mean_difference": -0.06365466437715503,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 0.09657170449058426
+    },
+    {
+      "feature": "tempo",
+      "train_mean": 122.26379681414798,
+      "external_mean": 122.87021818088259,
+      "mean_difference": 0.6064213667346081,
+      "standardized_mean_difference": 0.019910165243387845,
+      "train_missing_rate": 0.0016731201300253357,
+      "external_missing_rate": 0.0
+    },
+    {
+      "feature": "tempo_normalized",
+      "train_mean": 0.46147504409558965,
+      "external_mean": 0.4640304846100924,
+      "mean_difference": 0.002555440514502738,
+      "standardized_mean_difference": 0.01991016524338714,
+      "train_missing_rate": 0.0016731201300253357,
+      "external_missing_rate": 0.0
+    },
+    {
+      "feature": "popularity",
+      "train_mean": 33.148525264113964,
+      "external_mean": null,
+      "mean_difference": null,
+      "standardized_mean_difference": null,
+      "train_missing_rate": 0.0,
+      "external_missing_rate": 1.0
+    }
+  ]
+}

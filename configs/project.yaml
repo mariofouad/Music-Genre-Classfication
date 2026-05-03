@@ -80,8 +80,9 @@ models:
     logistic_regression:
       C: [1.0]
     random_forest:
-      n_estimators: [100]
+      n_estimators: [120]
       max_depth: [null]
+      class_weight: [null]
     gradient_boosting:
       n_estimators: [50]
       learning_rate: [0.08]
