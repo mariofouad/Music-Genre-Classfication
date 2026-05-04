@@ -1,4 +1,5 @@
-PYTHON ?= python
+# macOS often has `python3` but no `python`; override with `make PYTHON=python` on Windows if needed.
+PYTHON ?= python3
 POETRY := $(PYTHON) -m poetry
 CONFIG ?= configs/project.yaml
 
