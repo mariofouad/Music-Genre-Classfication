@@ -14,6 +14,9 @@ concurrency:
   group: ci-cd-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  STREAMLIT_DEPLOY_BRANCH: streamlit-deploy
+
 jobs:
   quality:
     name: Lint, test, and build
@@ -60,8 +63,8 @@ jobs:
             dist/
           if-no-files-found: error
 
-  deploy:
-    name: Deploy gate (Streamlit Cloud)
+  cloud_check:
+    name: Cloud build check
     runs-on: ubuntu-latest
     needs: quality
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -84,8 +87,26 @@ jobs:
 
       - name: Deployment note
         run: |
-          echo "Main passed CI. Streamlit Community Cloud pulls from GitHub when you connect this repo;"
-          echo "set Main file to app.py and Python 3.11. Each push to main triggers a fresh build there."
+          echo "Cloud build checks passed on main."
+          echo "The deploy branch is updated only after quality + cloud_check succeed."
+
+  promote_streamlit_branch:
+    name: Promote to Streamlit deploy branch
+    runs-on: ubuntu-latest
+    needs: cloud_check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update Streamlit deploy branch to current main commit
+        run: |
+          git push --force-with-lease origin HEAD:${{ env.STREAMLIT_DEPLOY_BRANCH }}
+          echo "Updated ${{ env.STREAMLIT_DEPLOY_BRANCH }} to $GITHUB_SHA"
 
   delivery:
     name: Build submission artifact
