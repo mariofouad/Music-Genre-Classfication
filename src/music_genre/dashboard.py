@@ -207,7 +207,7 @@ def render_dashboard(config_path: str | Path = "configs/project.yaml") -> None:
 
     config, data, metrics = load_dashboard_data(config_path)
     st.set_page_config(page_title="Music Genre Classification", layout="wide")
-    st.title("Music Classification")
+    st.title("Musi Genre Classification")
 
     target = config["data"]["target"]
     target_label = "Genre families" if target == "genre_family" else "Genre labels"
