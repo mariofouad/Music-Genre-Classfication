@@ -133,22 +133,4 @@ The training pipeline logs at least five classifiers:
 
 Each run logs accuracy, macro F1, weighted F1, top-3 accuracy when class probabilities are available, high-confidence accuracy, and costly misclassification rate.
 
-## Notes for Reproducibility
 
-Raw data is ignored by Git because the datasets are large. Keep the source URLs and citations in the final report, and place local copies under `data/raw` before running the pipeline.
-
-### Shipping `models/best_model.joblib` (Git LFS)
-
-The trained **`best_model.joblib`** is often hundreds of MB; GitHub requires **Git LFS** for files over ~100 MB.
-
-1. Install Git LFS once: `brew install git-lfs` (macOS), then `git lfs install`.
-2. This repo already lists **`models/best_model.joblib`** in **`.gitattributes`** for LFS.
-3. `.gitignore` ignores other **`models/*.joblib`** run artifacts so only **`best_model.joblib`** is tracked.
-
-```powershell
-git add .gitattributes models/best_model.joblib
-git commit -m "Track best model via Git LFS"
-git push
-```
-
-Watch GitHub **LFS bandwidth/storage** quotas on free accounts.
