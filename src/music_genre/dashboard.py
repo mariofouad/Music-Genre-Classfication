@@ -206,7 +206,7 @@ def render_dashboard(config_path: str | Path = "configs/project.yaml") -> None:
     import plotly.express as px
 
     config, data, metrics = load_dashboard_data(config_path)
-    st.set_page_config(page_title="Music Genre Classification", layout="wide")
+    st.set_page_config(page_title="Music  Classification", layout="wide")
     st.title("Music Genre Classification")
 
     target = config["data"]["target"]
